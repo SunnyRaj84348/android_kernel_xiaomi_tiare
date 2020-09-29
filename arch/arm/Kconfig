@@ -1291,6 +1291,18 @@ config ARM_ERRATA_773022
 	  loop buffer may deliver incorrect instructions. This
 	  workaround disables the loop buffer to avoid the erratum.
 
+config MACH_XIAOMI_MSM8917
+	bool "Enable support for Xiaomi MSM8917"
+	select ARCH_MSM8917
+	help
+	  This enables support for Xiaomi MSM8917 devices.
+
+config MACH_XIAOMI_TIARE
+	bool "Enable Support for Xiaomi Redmi Go tiare"
+	select MACH_XIAOMI_MSM8917
+	help
+	  This enables support for Xiaomi Redmi Go tiare.
+
 endmenu
 
 source "arch/arm/common/Kconfig"
