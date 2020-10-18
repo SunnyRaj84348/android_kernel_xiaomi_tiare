@@ -197,8 +197,6 @@
 		qcom,gpio-req-tbl-label = "CAMIF_MCLK2",
 					  "CAM_STANDBY2";
 
-		/delete-property/ qcom,cci-master;
-
 		qcom,cam-power-seq-type =
 			"sensor_gpio",
 			"sensor_gpio",
